@@ -1,0 +1,20 @@
+splunk:
+  username: your_username
+  password: your_password
+  host: your_splunk_instance_hostname
+  port: 8089
+  index: your_index
+
+aws:
+  access_key_id: your_aws_access_key_id
+  secret_access_key: your_aws_secret_access_key
+  s3_bucket_name: your_s3_bucket_name
+  s3_key_prefix: your_s3_key_prefix
+
+queries:
+  - query: "index=your_index_1 your_query_1"
+    start_date: "2023-01-01"
+    end_date: "2023-01-07"
+  - query: "index=your_index_2 your_query_2"
+    start_date: "2023-02-01"
+    end_date: "2023-02-07"
